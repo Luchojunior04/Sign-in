@@ -1,12 +1,15 @@
 const userName = document.getElementById("userName")
 const Password = document.getElementById("Password")
 
+const contraseñaCorrecta = "admin"
+const usuarioContra = "Luis junior"
 const SignInBtn = document.getElementById("SignInBtn")
 SignInBtn.addEventListener("click", function(){
     
-    if(userName.value === usurarioContra){
+    if(userName.value === usuarioContra && Password.value === contraseñaCorrecta){
        alert("Vales pan")
-       alert(Password.value) 
+    } else {
+      alert('acceso denegado')
     }
     
     
@@ -20,6 +23,3 @@ SignInBtn.addEventListener("click", function(){
 
 //}
 
-
-const usurarioContra = "Luis junior"
-const contraseñaCorrecta = "admin"
